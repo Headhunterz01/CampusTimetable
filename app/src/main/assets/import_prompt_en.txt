@@ -1,0 +1,29 @@
+Read the weekly timetable screenshots I provide and generate JSON that CampusTimetable can import. Use only the screenshots and information I explicitly provide. Do not guess course names, weekdays, periods or weeks. Ask me if anything is uncertain. Output plain JSON without code fences, comments or explanations. I will save it as a UTF-8 .json file.
+
+The current semester has {{TOTAL_WEEKS}} weeks. The app currently displays week {{CURRENT_WEEK}}. Establish each screenshot's week from its title or my explicit confirmation; do not infer it from the week currently displayed in the app. Current periods (placeholder rows cannot start or end a session):
+{{PERIODS}}
+
+Example structure only, not recognized screenshot data:
+{
+  "format": "campus-timetable",
+  "version": 1,
+  "courses": [
+    {
+      "name": "Mathematics",
+      "teacher": "",
+      "note": "",
+      "color": "#6F85D7",
+      "sessions": [
+        {
+          "weekday": 1,
+          "startPeriod": {{EXAMPLE_START}},
+          "endPeriod": {{EXAMPLE_END}},
+          "location": "Teaching building 101",
+          "weeks": [{{CURRENT_WEEK}}]
+        }
+      ]
+    }
+  ]
+}
+
+Rules: format and version must match this example. courses is an array. Each course requires name and nonempty sessions; teacher, note and color are optional. If supplied, color must be #RRGGBB. Each session requires weekday (1–7, Monday–Sunday), startPeriod and endPeriod (inclusive period numbers). location is optional. weeks is required: use "all" only if the course is confirmed to occur every week; otherwise use explicit week numbers such as [3,5,7]. A week 9 screenshot proves only week 9, so use [9] and do not infer other weeks. Across screenshots, merge sessions for the same course, weekday, periods and location, combining their confirmed week numbers. Use separate sessions for different weekdays, periods or locations. Periods 6–7 mean startPeriod: 6 and endPeriod: 7. Do not create rows for normal breaks. Use double quotes for keys and strings. No extra fields, trailing commas or comments.

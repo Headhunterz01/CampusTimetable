@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorSurface"
+            app:title="@string/timetable_title"
+            app:titleTextColor="?attr/colorOnSurface"
+            app:titleTextAppearance="@style/TextAppearance.CampusTimetable.Title"
+            app:menu="@menu/main_menu" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/previousWeek"
+                style="@style/Widget.CampusTimetable.WeekButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/previous_week"
+                app:icon="@drawable/ic_chevron_left" />
+
+            <TextView
+                android:id="@+id/weekTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/nextWeek"
+                style="@style/Widget.CampusTimetable.WeekButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/next_week"
+                app:icon="@drawable/ic_chevron_right" />
+        </LinearLayout>
+
+        <com.seb.campustimetable.ui.timetable.WeekHeaderView
+            android:id="@+id/weekHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:id="@+id/timetableScroll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:fillViewport="false"
+            android:overScrollMode="ifContentScrolls"
+            android:paddingBottom="88dp">
+
+            <com.seb.campustimetable.ui.timetable.TimetableView
+                android:id="@+id/timetable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addCourseFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/add_course"
+        app:backgroundTint="?attr/colorPrimaryContainer"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_add"
+        app:tint="?attr/colorOnPrimaryContainer" />
+</FrameLayout>

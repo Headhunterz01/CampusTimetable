@@ -1,0 +1,29 @@
+请识别我提供的每周课表截图，生成 CampusTimetable 可导入的 JSON。只依据截图和我明确提供的信息，不要猜测课程名、星期、节数或周次；如果无法确定，请先向我提问。输出纯 JSON，不要代码围栏、注释或解释，我会将其保存为 UTF-8 编码的 .json 文件。
+
+当前应用学期共 {{TOTAL_WEEKS}} 周；当前课表显示第 {{CURRENT_WEEK}} 周。截图对应周次必须由截图或我明确确认，不要根据当前显示周次自行推断。当前课时设置如下（占位行不可作为课程开始或结束节数）：
+{{PERIODS}}
+
+格式示例（数据仅演示结构，不是截图识别结果）：
+{
+  "format": "campus-timetable",
+  "version": 1,
+  "courses": [
+    {
+      "name": "高等数学",
+      "teacher": "",
+      "note": "",
+      "color": "#6F85D7",
+      "sessions": [
+        {
+          "weekday": 1,
+          "startPeriod": {{EXAMPLE_START}},
+          "endPeriod": {{EXAMPLE_END}},
+          "location": "教学楼 101",
+          "weeks": [{{CURRENT_WEEK}}]
+        }
+      ]
+    }
+  ]
+}
+
+规则：顶层 format 和 version 必须与示例一致。courses 是课程数组；每门课的 name 和非空 sessions 必填，teacher、note、color 可省略，color 若写须为 #RRGGBB。每条 sessions 中 weekday 为 1 至 7（周一至周日），startPeriod 和 endPeriod 是包含首尾的课时编号，location 可省略。weeks 必填：确认了每周都有课才写 "all"；否则写明确周次数组，例如 [3,5,7]；一张第 9 周的截图只能证明该课在第 9 周出现，应写 [9]，不能推断其他周。对于多张截图，把同一门课的同一上课时间和地点合并为一条安排，并汇总已确认的周次数组；不同星期、节数或地点分别写成不同安排。连续 6–7 节写 startPeriod: 6、endPeriod: 7；不要为普通课间创建课时行。所有字段名和 JSON 字符串须使用英文双引号，不能出现多余字段、末尾逗号或注释。

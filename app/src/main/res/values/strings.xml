@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CampusTimetable</string>
+    <string name="timetable_title">我的课表</string>
+    <string name="add_course">添加课程</string>
+    <string name="previous_week">上一周</string>
+    <string name="next_week">下一周</string>
+    <string name="settings">设置</string>
+    <string name="course_details">课程详情</string>
+    <string name="more_options">更多选项</string>
+    <!-- Fill these when the public repository and project license are chosen. -->
+    <string name="project_repository_url" translatable="false"></string>
+    <string name="project_license_name" translatable="false"></string>
+</resources>

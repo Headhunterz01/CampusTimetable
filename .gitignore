@@ -1,0 +1,21 @@
+.gradle/
+.kotlin/
+**/build/
+local.properties
+.idea/
+*.iml
+*.jks
+*.keystore
+*.p12
+*.pfx
+release-signing.env
+
+/work/
+/preview/
+
+# Local timetable exports and device data are private user content.
+/课表导入_第9至19周.json
+*phone-backup*.json
+*.apk
+*.aab
+*.mp4

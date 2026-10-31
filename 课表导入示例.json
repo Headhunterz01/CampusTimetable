@@ -1,0 +1,22 @@
+{
+  "format": "campus-timetable",
+  "version": 1,
+  "courses": [
+    {
+      "name": "高等数学",
+      "teacher": "",
+      "note": "",
+      "color": "#6F85D7",
+      "sessions": [
+        {"weekday": 1, "startPeriod": 6, "endPeriod": 7, "location": "教学楼 101", "weeks": [9]},
+        {"weekday": 3, "startPeriod": 8, "endPeriod": 9, "location": "教学楼 102", "weeks": [9]}
+      ]
+    },
+    {
+      "name": "体育",
+      "sessions": [
+        {"weekday": 2, "startPeriod": 1, "endPeriod": 2, "location": "操场", "weeks": "all"}
+      ]
+    }
+  ]
+}

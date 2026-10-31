@@ -1,0 +1,9 @@
+<resources>
+    <color name="brand_primary">#496B87</color>
+    <color name="launcher_background">#6750A4</color>
+    <color name="brand_on_primary">#FFFFFF</color>
+    <color name="light_background">#FFFFFF</color>
+    <color name="light_surface">#FFFFFF</color>
+    <color name="light_on_surface">#1B1B1F</color>
+    <color name="timetable_divider">#1F667085</color>
+</resources>

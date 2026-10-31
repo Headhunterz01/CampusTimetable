@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_settings" android:title="@string/settings"
+        android:icon="@drawable/ic_settings" app:showAsAction="never" />
+    <item android:id="@+id/action_share" android:title="@string/share_week"
+        android:icon="@drawable/ic_share" app:showAsAction="never" />
+    <item android:id="@+id/action_about" android:title="@string/ui_about_campustimetable"
+        android:icon="@drawable/ic_info_outline" app:showAsAction="never" />
+</menu>

@@ -1,0 +1,36 @@
+<resources>
+    <style name="Base.Theme.CampusTimetable" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorOnPrimary">@color/brand_on_primary</item>
+        <item name="colorSurface">@color/light_surface</item>
+        <item name="android:colorBackground">@color/light_background</item>
+        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
+        <item name="android:statusBarColor">@color/light_background</item>
+        <item name="android:navigationBarColor">@color/light_background</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:fontFamily">sans</item>
+    </style>
+    <style name="Theme.CampusTimetable" parent="Base.Theme.CampusTimetable" />
+    <style name="Theme.CampusTimetable.Oled" parent="Theme.CampusTimetable">
+        <item name="colorSurface">@android:color/black</item>
+        <item name="android:colorBackground">@android:color/black</item>
+        <item name="android:statusBarColor">@android:color/black</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+    </style>
+    <style name="TextAppearance.CampusTimetable.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textSize">22sp</item>
+    </style>
+    <style name="Widget.CampusTimetable.WeekButton" parent="Widget.Material3.Button.IconButton.Filled.Tonal">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">0dp</item>
+        <item name="iconSize">24dp</item>
+        <item name="iconTint">?attr/colorOnSecondaryContainer</item>
+        <item name="cornerRadius">16dp</item>
+    </style>
+</resources>

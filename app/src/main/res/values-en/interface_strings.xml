@@ -1,0 +1,15 @@
+<resources>
+    <string name="language">Language</string>
+    <string name="follow_system">Follow system</string>
+    <string name="interaction">Interaction</string>
+    <string name="app_animations">App animations</string>
+    <string name="app_animations_detail">Animate page navigation, week changes and theme changes. Respects the system animation setting.</string>
+    <string name="selected">Selected</string>
+    <string name="not_selected">Not selected</string>
+    <string name="debug_build">Debug</string>
+    <string name="release_build">Release</string>
+    <string name="share_week">Share this week as an image</string>
+    <string name="close">Close</string>
+    <string name="week_month">MMM</string>
+    <string name="weeks_hint">Weeks (1-16odd / 1-16even; blank = all)</string>
+</resources>
