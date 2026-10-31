@@ -9,10 +9,13 @@
   <img alt="Material Design 3" src="https://img.shields.io/badge/Material-Design%203-6750A4?logo=materialdesign&logoColor=white">
   <img alt="Room and DataStore" src="https://img.shields.io/badge/AndroidX-Room%20%2B%20DataStore-3DDC84?logo=android&logoColor=white">
   <img alt="Minimum Android API" src="https://img.shields.io/badge/Android-API%2026%2B-34A853?logo=android&logoColor=white">
-  <img alt="Version 1.7.0" src="https://img.shields.io/badge/version-1.7.0-5267C3">
+  <img alt="Version 1.7.1" src="https://img.shields.io/badge/version-1.7.1-5267C3">
+  <img alt="简体中文" src="https://img.shields.io/badge/language-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-D32F2F">
+  <img alt="English" src="https://img.shields.io/badge/language-English-1565C0">
 </p>
 
 <p align="center">一款免费、无广告、离线优先的 Android 课表应用</p>
+<p align="center"><a href="README.md">简体中文</a> · <a href="README.en.md">English</a></p>
 
 ## 为什么做这个应用
 
@@ -70,4 +73,4 @@ export CAMPUS_KEY_PASSWORD=...
 
 ## 许可证
 
-项目许可证尚待确定。目前请先查看仓库中的依赖许可信息；在许可证正式添加前，不应将本项目视为已按某个开源许可证授权。
+本项目以 [MIT License](LICENSE) 授权。第三方依赖遵循各自的许可证。

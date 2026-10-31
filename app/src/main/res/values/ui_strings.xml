@@ -227,13 +227,13 @@
     <string name="ui_not_yet_chosen">"尚未选定"</string>
     <string name="ui_data_and_permissions">"数据与权限"</string>
     <string name="ui_courses_and_settings_are_stored_on_this_devic">"课程和设置保存在本机。导出备份或分享图片时，由你选择保存位置与接收应用。通知权限和准时提醒权限由 Android 管理。"</string>
-    <string name="ui_the_project_is_preparing_to_go_open_source_on">"项目准备开源。仓库地址确定后，此页会提供源代码、问题反馈和版本发布入口。"</string>
+    <string name="ui_the_project_is_preparing_to_go_open_source_on">"项目已在 GitHub 发布，并采用 MIT 许可证。可查看源代码、反馈问题或获取安装包。"</string>
     <string name="ui_view_source_code">"查看源代码"</string>
     <string name="ui_feedback">"问题反馈"</string>
     <string name="ui_report_a_problem_or_suggest_an_idea">"报告问题或提出建议"</string>
     <string name="ui_releases">"版本发布"</string>
     <string name="ui_version_history_and_apk_downloads">"查看版本记录与安装包"</string>
-    <string name="ui_the_project_license_has_not_been_chosen_refer">"项目许可证尚未选定，发布时以仓库中的 LICENSE 文件为准。"</string>
+    <string name="ui_the_project_license_has_not_been_chosen_refer">"本项目采用 MIT 许可证，完整条款请查看仓库中的 LICENSE 文件。"</string>
     <string name="ui_thanks_to_the_open_source_community">"感谢开源社区"</string>
     <string name="ui_the_app_directly_uses_these_components_depend">"应用直接使用以下组件。项目本身的许可证与这些依赖的许可证分别说明。"</string>
     <string name="ui_material_design_ui_apache_2_0">"Material Design 界面 · Apache 2.0"</string>

@@ -7,7 +7,6 @@
     <string name="settings">设置</string>
     <string name="course_details">课程详情</string>
     <string name="more_options">更多选项</string>
-    <!-- Fill these when the public repository and project license are chosen. -->
-    <string name="project_repository_url" translatable="false"></string>
-    <string name="project_license_name" translatable="false"></string>
+    <string name="project_repository_url" translatable="false">https://github.com/Headhunterz01/CampusTimetable</string>
+    <string name="project_license_name" translatable="false">MIT License</string>
 </resources>

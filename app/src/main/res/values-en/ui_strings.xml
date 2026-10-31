@@ -227,13 +227,13 @@
     <string name="ui_not_yet_chosen">"Not yet chosen"</string>
     <string name="ui_data_and_permissions">"Data and permissions"</string>
     <string name="ui_courses_and_settings_are_stored_on_this_devic">"Courses and settings are stored on this device. You choose where to save backups and which app receives shared images. Android manages notification and exact reminder permissions."</string>
-    <string name="ui_the_project_is_preparing_to_go_open_source_on">"The project is preparing to go open source. Once published, this page will link to source code, issues and releases."</string>
+    <string name="ui_the_project_is_preparing_to_go_open_source_on">"The project is published on GitHub under the MIT License. Browse the source, report an issue, or get the latest APK."</string>
     <string name="ui_view_source_code">"View source code"</string>
     <string name="ui_feedback">"Feedback"</string>
     <string name="ui_report_a_problem_or_suggest_an_idea">"Report a problem or suggest an idea"</string>
     <string name="ui_releases">"Releases"</string>
     <string name="ui_version_history_and_apk_downloads">"Version history and APK downloads"</string>
-    <string name="ui_the_project_license_has_not_been_chosen_refer">"The project license has not been chosen. Refer to the repository LICENSE file when published."</string>
+    <string name="ui_the_project_license_has_not_been_chosen_refer">"This project is licensed under the MIT License. See the repository LICENSE file for the full terms."</string>
     <string name="ui_thanks_to_the_open_source_community">"Thanks to the open source community"</string>
     <string name="ui_the_app_directly_uses_these_components_depend">"The app directly uses these components. Dependency licenses are listed separately from the project license."</string>
     <string name="ui_material_design_ui_apache_2_0">"Material Design UI · Apache 2.0"</string>
