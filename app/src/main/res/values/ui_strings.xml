@@ -219,7 +219,7 @@
     <string name="ui_always_use_light_page_backgrounds">"始终使用浅色页面背景。"</string>
     <string name="ui_app_icon">"应用图标"</string>
     <string name="ui_a_timetable_of_your_own">"一张属于你的课表。"</string>
-    <string name="ui_save_courses_locally_view_weekly_schedules_an">"本地保存课程，按周查看安排，自定义课时、颜色和课程通知。支持完整备份与图片分享，无需账号。"</string>
+    <string name="ui_save_courses_locally_view_weekly_schedules_an">"本地保存课程，按周查看安排，自定义课时、颜色和课程通知。支持桌面小组件、完整备份与图片分享，无需账号。"</string>
     <string name="ui_open_source_and_community">"开源与交流"</string>
     <string name="ui_github_source_and_feedback">"GitHub 源代码与反馈"</string>
     <string name="ui_repository_coming_soon">"仓库待发布"</string>

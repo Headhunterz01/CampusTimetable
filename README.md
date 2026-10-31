@@ -9,7 +9,7 @@
   <img alt="Material Design 3" src="https://img.shields.io/badge/Material-Design%203-6750A4?logo=materialdesign&logoColor=white">
   <img alt="Room and DataStore" src="https://img.shields.io/badge/AndroidX-Room%20%2B%20DataStore-3DDC84?logo=android&logoColor=white">
   <img alt="Minimum Android API" src="https://img.shields.io/badge/Android-API%2026%2B-34A853?logo=android&logoColor=white">
-  <img alt="Version 1.7.2" src="https://img.shields.io/badge/version-1.7.2-5267C3">
+  <img alt="Version 1.8.0" src="https://img.shields.io/badge/version-1.8.0-5267C3">
   <img alt="简体中文" src="https://img.shields.io/badge/language-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-D32F2F">
   <img alt="English" src="https://img.shields.io/badge/language-English-1565C0">
 </p>
@@ -30,10 +30,17 @@
 - **课程提醒**：设置默认提醒时间，也可为单门课单独调整；提醒通过 Android 通知发送。
 - **主题与外观**：浅色、深色、纯黑和 Monet 动态颜色主题；可调整课程颜色、管理颜色预设，并选择中英文界面。
 - **备份与分享**：导出和恢复包含课程及应用设置的完整备份，也可分享当前周课表图片。
+- **桌面小组件**：提供“今日课程”和“下一节课”，显示课程时间与地点，支持缩放、手动刷新、中英界面及四种主题。
 - **页面动画**：可在主题设置中开关页面和切周动画。
 
 应用面向 Android 8.0（API 26）及以上版本。课表与设置保存在设备本地；应用不要求登录或云同步。
 新安装会预置第 9 周周四、周五的少量示例课程；旧安装中的现有课程不会被这项调整清除。
+
+## 桌面小组件
+
+在应用的“设置 → 桌面小组件”中选择组件并确认添加，也可以长按桌面空白处，从小组件列表中找到 CampusTimetable。
+
+“今日课程”优先展示尚未结束的课程；全部结束后显示当天最后几节。“下一节课”会显示正在上的课，或本学期接下来的一次上课安排。点击组件打开课表，右上角按钮可手动刷新。修改课程、学期、课时或主题后会同步刷新；系统休眠时，定时刷新可能延后至设备唤醒。
 
 ## 导入课表
 

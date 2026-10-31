@@ -9,7 +9,7 @@
   <img alt="Material Design 3" src="https://img.shields.io/badge/Material-Design%203-6750A4?logo=materialdesign&logoColor=white">
   <img alt="Room and DataStore" src="https://img.shields.io/badge/AndroidX-Room%20%2B%20DataStore-3DDC84?logo=android&logoColor=white">
   <img alt="Minimum Android API" src="https://img.shields.io/badge/Android-API%2026%2B-34A853?logo=android&logoColor=white">
-  <img alt="Version 1.7.2" src="https://img.shields.io/badge/version-1.7.2-5267C3">
+  <img alt="Version 1.8.0" src="https://img.shields.io/badge/version-1.8.0-5267C3">
   <img alt="简体中文" src="https://img.shields.io/badge/language-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-D32F2F">
   <img alt="English" src="https://img.shields.io/badge/language-English-1565C0">
 </p>
@@ -30,10 +30,17 @@ Finding a convenient timetable app can be harder than it should be. Checking a s
 - **Course notifications**: Set a default reminder and customize it for individual courses. Reminders are sent as Android notifications.
 - **Themes and appearance**: Choose light, dark, pure black, or Monet dynamic colors; customize course colors and presets; switch between Chinese and English.
 - **Backup and sharing**: Export and restore a full backup of courses and app settings, or share an image of the current week.
+- **Home screen widgets**: Today’s classes and Next class show times and locations, with resizing, manual refresh, Chinese/English text, and all four themes.
 - **Page animations**: Turn page and week-transition animations on or off in theme settings.
 
 The app supports Android 8.0 (API 26) and later. Timetable data and settings are stored locally. No account or cloud sync is required.
 Fresh installs include a small set of sample classes on Thursday and Friday of week 9. Existing timetables are not cleared by this change.
+
+## Home screen widgets
+
+Open Settings → Home screen widgets, choose a widget and confirm with your launcher. You can also long-press the home screen and find CampusTimetable in the widget picker.
+
+Today’s classes prioritizes classes that have not ended; after all classes end, it shows the last classes of the day. Next class shows the current class or the next scheduled class in the semester. Tap the widget to open the timetable, or use the refresh button. Course, semester, period and theme edits refresh the widgets; scheduled updates may be delayed while the device sleeps.
 
 ## Import a timetable
 

@@ -219,7 +219,7 @@
     <string name="ui_always_use_light_page_backgrounds">"Always use light page backgrounds."</string>
     <string name="ui_app_icon">"App icon"</string>
     <string name="ui_a_timetable_of_your_own">"A timetable of your own."</string>
-    <string name="ui_save_courses_locally_view_weekly_schedules_an">"Save courses locally, view weekly schedules, and customize periods, colors and course notifications. Full backups and image sharing, with no account needed."</string>
+    <string name="ui_save_courses_locally_view_weekly_schedules_an">"Save courses locally, view weekly schedules, and customize periods, colors and course notifications. Home screen widgets, full backups and image sharing, with no account needed."</string>
     <string name="ui_open_source_and_community">"Open source and community"</string>
     <string name="ui_github_source_and_feedback">"GitHub source and feedback"</string>
     <string name="ui_repository_coming_soon">"Repository coming soon"</string>

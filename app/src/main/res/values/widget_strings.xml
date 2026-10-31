@@ -1,0 +1,28 @@
+<resources>
+    <string name="widget_help">添加说明</string>
+    <string name="widget_today">"今日课程"</string>
+    <string name="widget_next">"下一节课"</string>
+    <string name="widget_ongoing">"正在上课"</string>
+    <string name="widget_today_description">"查看今天的课程、时间和地点，可调整大小。"</string>
+    <string name="widget_next_description">"显示正在进行或接下来的课程。"</string>
+    <string name="widget_refresh">"刷新课程"</string>
+    <string name="widget_open">"点击打开课表"</string>
+    <string name="widget_week">"第 %1$d 周"</string>
+    <string name="widget_no_classes">"今天没有课程，享受自由时间。"</string>
+    <string name="widget_no_upcoming">"本学期暂无后续课程。"</string>
+    <string name="widget_outside_semester">"当前不在学期内，点击设置课表。"</string>
+    <string name="widget_start">"打开应用设置课表"</string>
+    <string name="widget_error">"暂时无法读取课表，点击右上角刷新。"</string>
+    <string name="widget_periods">"第 %1$d–%2$d 节"</string>
+    <string name="widget_current_location">"正在上课 · %1$s"</string>
+    <string name="widget_date_pattern">"M月d日 EEEE"</string>
+    <string name="widget_example">"示例课程"</string>
+    <string name="widget_settings">"桌面小组件"</string>
+    <string name="widget_settings_detail">"今日课程、下一节课 · 点击添加"</string>
+    <string name="widget_choose">"选择要添加的小组件"</string>
+    <string name="widget_pin_help">"选择后由桌面确认添加。也可以长按桌面空白处，在“小组件”中找到 CampusTimetable。"</string>
+    <string name="widget_pin_unavailable">"当前桌面不支持快捷添加。请长按桌面空白处，从“小组件”中添加。"</string>
+    <string name="widget_preview_time" translatable="false">08:40–10:10</string>
+    <plurals name="widget_total"><item quantity="other">今天共 %1$d 门 · 打开查看全部</item></plurals>
+    <plurals name="widget_done"><item quantity="other">今日 %1$d 门课程已结束</item></plurals>
+</resources>

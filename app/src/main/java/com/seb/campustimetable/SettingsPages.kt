@@ -113,6 +113,7 @@ class SettingsPages(
         row(content, context.getString(R.string.language), languageName(), "language")
         row(content, context.getString(R.string.ui_course_color_presets), context.getString(R.string.ui_color_previews_rgb_names_and_order), "palette")
         section(content, context.getString(R.string.ui_timetable))
+        row(content, context.getString(R.string.widget_settings), context.getString(R.string.widget_settings_detail), "widgets")
         row(content, context.getString(R.string.ui_semester_settings), summary["semester"].orEmpty(), "semester")
         row(content, context.getString(R.string.ui_periods_and_times), summary["periods"].orEmpty(), "periods")
         section(content, context.getString(R.string.ui_reminders))

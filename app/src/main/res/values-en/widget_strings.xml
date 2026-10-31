@@ -1,0 +1,27 @@
+<resources>
+    <string name="widget_help">How to add</string>
+    <string name="widget_today">"Today’s classes"</string>
+    <string name="widget_next">"Next class"</string>
+    <string name="widget_ongoing">"In progress"</string>
+    <string name="widget_today_description">"Today’s classes, times and locations in a resizable widget."</string>
+    <string name="widget_next_description">"The current class or your next scheduled class."</string>
+    <string name="widget_refresh">"Refresh classes"</string>
+    <string name="widget_open">"Tap to open timetable"</string>
+    <string name="widget_week">"Week %1$d"</string>
+    <string name="widget_no_classes">"No classes today. Enjoy your free time."</string>
+    <string name="widget_no_upcoming">"No upcoming classes this semester."</string>
+    <string name="widget_outside_semester">"Outside the semester. Tap to set up your timetable."</string>
+    <string name="widget_start">"Open the app to set up your timetable"</string>
+    <string name="widget_error">"Could not load classes. Tap refresh to try again."</string>
+    <string name="widget_periods">"Periods %1$d–%2$d"</string>
+    <string name="widget_current_location">"In progress · %1$s"</string>
+    <string name="widget_date_pattern">"EEE, MMM d"</string>
+    <string name="widget_example">"Example class"</string>
+    <string name="widget_settings">"Home screen widgets"</string>
+    <string name="widget_settings_detail">"Today’s classes and next class · Tap to add"</string>
+    <string name="widget_choose">"Choose a widget to add"</string>
+    <string name="widget_pin_help">"Your launcher will confirm adding the widget. You can also long-press your home screen and find CampusTimetable under Widgets."</string>
+    <string name="widget_pin_unavailable">"This launcher does not support pinning. Long-press the home screen and add it from Widgets."</string>
+    <plurals name="widget_total"><item quantity="one">%1$d class today · Open timetable</item><item quantity="other">%1$d classes today · Open timetable</item></plurals>
+    <plurals name="widget_done"><item quantity="one">%1$d class finished today</item><item quantity="other">All %1$d classes finished today</item></plurals>
+</resources>

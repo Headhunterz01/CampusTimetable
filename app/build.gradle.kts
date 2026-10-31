@@ -17,9 +17,11 @@ android {
         applicationId = "com.seb.campustimetable"
         minSdk = 26
         targetSdk = 37
-        versionCode = 11
-        versionName = "1.7.2"
-        testInstrumentationRunner = if (providers.gradleProperty("interfaceVerification").orNull == "true")
+        versionCode = 12
+        versionName = "1.8.0"
+        testInstrumentationRunner = if (providers.gradleProperty("widgetVerification").orNull == "true")
+            "com.seb.campustimetable.WidgetInstrumentation"
+        else if (providers.gradleProperty("interfaceVerification").orNull == "true")
             "com.seb.campustimetable.InterfaceInstrumentation"
         else if (providers.gradleProperty("motionVerification").orNull == "true")
             "com.seb.campustimetable.MotionInstrumentation" else "com.seb.campustimetable.BackupInstrumentation"

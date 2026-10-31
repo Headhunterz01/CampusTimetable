@@ -960,6 +960,7 @@ class MainActivity : AppCompatActivity() {
         when (action) {
             "settings", "theme", "about", "components", "license", "source" -> openSettingsPage(action)
             "language" -> showLanguageSettings()
+            "widgets" -> showWidgetChooser()
             "animations" -> {
                 InterfacePreferences.setAnimationsEnabled(this, !InterfacePreferences.animationsEnabled(this))
                 renderSettingsPage()
@@ -1005,6 +1006,23 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun animationsEnabled() = InterfacePreferences.animationsEnabled(this) && ValueAnimator.areAnimatorsEnabled()
+
+    private fun showWidgetChooser() {
+        MaterialAlertDialogBuilder(this)
+            .setTitle(getString(R.string.widget_choose))
+            .setItems(arrayOf(getString(R.string.widget_today), getString(R.string.widget_next))) { _, which ->
+                val manager = android.appwidget.AppWidgetManager.getInstance(this)
+                val provider = if (which == 0) com.seb.campustimetable.widget.TodayWidgetProvider::class.java else com.seb.campustimetable.widget.NextClassWidgetProvider::class.java
+                if (!manager.isRequestPinAppWidgetSupported || !manager.requestPinAppWidget(android.content.ComponentName(this, provider), null, null)) {
+                    MaterialAlertDialogBuilder(this).setMessage(getString(R.string.widget_pin_unavailable))
+                        .setPositiveButton(android.R.string.ok, null).show()
+                }
+            }
+            .setNeutralButton(getString(R.string.widget_help)) { _, _ ->
+                MaterialAlertDialogBuilder(this).setMessage(getString(R.string.widget_pin_help)).setPositiveButton(android.R.string.ok, null).show()
+            }
+            .setNegativeButton(getString(R.string.ui_cancel), null).show()
+    }
 
     private fun showLanguageSettings() {
         val tags = listOf("", "zh-Hans", "en")

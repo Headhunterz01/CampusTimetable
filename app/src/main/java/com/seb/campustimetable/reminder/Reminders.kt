@@ -82,14 +82,21 @@ object Reminders {
         }
     }
 
-    suspend fun reschedule(context: Context) = lock.withLock {
-        val now = System.currentTimeMillis()
-        val previous = context.getSharedPreferences("reminder_state", Context.MODE_PRIVATE).getLong(SCHEDULED_AT, 0L)
-        if (previous > 0 && previous <= now) {
-            cancelAlarm(context, previous)
-            deliverLocked(context, previous, now)
+    suspend fun reschedule(context: Context) {
+        try {
+            lock.withLock {
+                val now = System.currentTimeMillis()
+                val previous = context.getSharedPreferences("reminder_state", Context.MODE_PRIVATE).getLong(SCHEDULED_AT, 0L)
+                if (previous > 0 && previous <= now) {
+                    cancelAlarm(context, previous)
+                    deliverLocked(context, previous, now)
+                }
+                scheduleLocked(context, now)
+            }
+        } finally {
+            // All course/settings edits already pass here, including when notifications are disabled.
+            com.seb.campustimetable.widget.TimetableWidgets.update(context)
         }
-        scheduleLocked(context, now)
     }
 
     private suspend fun scheduleLocked(context: Context, after: Long) {
