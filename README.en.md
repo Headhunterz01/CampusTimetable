@@ -9,7 +9,7 @@
   <img alt="Material Design 3" src="https://img.shields.io/badge/Material-Design%203-6750A4?logo=materialdesign&logoColor=white">
   <img alt="Room and DataStore" src="https://img.shields.io/badge/AndroidX-Room%20%2B%20DataStore-3DDC84?logo=android&logoColor=white">
   <img alt="Minimum Android API" src="https://img.shields.io/badge/Android-API%2026%2B-34A853?logo=android&logoColor=white">
-  <img alt="Version 1.7.1" src="https://img.shields.io/badge/version-1.7.1-5267C3">
+  <img alt="Version 1.7.2" src="https://img.shields.io/badge/version-1.7.2-5267C3">
   <img alt="简体中文" src="https://img.shields.io/badge/language-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-D32F2F">
   <img alt="English" src="https://img.shields.io/badge/language-English-1565C0">
 </p>
@@ -33,6 +33,7 @@ Finding a convenient timetable app can be harder than it should be. Checking a s
 - **Page animations**: Turn page and week-transition animations on or off in theme settings.
 
 The app supports Android 8.0 (API 26) and later. Timetable data and settings are stored locally. No account or cloud sync is required.
+Fresh installs include a small set of sample classes on Thursday and Friday of week 9. Existing timetables are not cleared by this change.
 
 ## Import a timetable
 
